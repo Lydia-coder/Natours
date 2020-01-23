@@ -6,11 +6,32 @@
     box-sizing: inherit; 
     
 }
+
+// media queryies from large to small
 html{
-    //this defines what 1rem is
-    font-size: 62.5%;
+    //this defines what 1rem is 
+    font-size: 62.5%;  // 1rem = 10px    10px/default 16px = 62.5%
+   
+    @include respond(tab-land){ // if i want 1rem to be px,  /16= 56.25%
+        font-size: 56.25%; // width<1200?
+    }
+    @include respond(tab-port){ // if i want 1rem to be 8px,  8/16= 50%
+        font-size: 50%; // width < 900 ?
+    }
+    
+   
+    @include respond(big-desktop){ // if i want 1rem to be 12px,  12/16= 75%
+        font-size: 75%;
+    }
+
 }
 body{
    
     box-sizing: border-box; 
+    padding: 3rem;
+
+
+    @include respond(tab-port){ 
+        padding: 0;
+    }
 }
