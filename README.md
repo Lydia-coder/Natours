@@ -4,7 +4,7 @@
 
 
 ## DEMO
-![Natours ]()
+![Natours ](https://github.com/Lydia-coder/Natours/blob/master/img/natours.gif?raw=true)
 ## What this project is about
 
 This is a webpage where you can book an organized tour in nature, please checkout: **[Goals for this project](#goals-for-this-project)**
